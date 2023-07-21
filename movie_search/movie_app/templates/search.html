@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Search</title>
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <form action="{% url 'search' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="query" placeholder="Enter a movie title">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

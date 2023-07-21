@@ -1,0 +1,10 @@
+{% extends 'basic.html' %}
+{% block title %} About {% endblock %}
+{% block body %}
+<p>Title = {{movie.title}}</p>
+<p>Movie_id = {{ movie.id}}</p>
+<p>Moive_overview = {{ movie.overview }}</p>
+<p>Release Date = {{ movie.release_date}}</p>
+<img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="{{ movie.title }} poster">
+{% endblock %}
+

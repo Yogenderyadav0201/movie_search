@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+{% block title %} About {% endblock %}
+{% block body %}
+<h1>Search Results for "{{ query }}"</h1>
+    <ul>
+        {% for movie in movies %}
+        <li>
+            <a href="{% url 'movie_details' movie.id %}">{{ movie.title }}</a>
+        </li>   
+        {% endfor %}
+    </ul>
+{% endblock %}    
+
+
+
+
