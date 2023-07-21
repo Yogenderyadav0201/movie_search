@@ -1,0 +1,23 @@
+first you have to install django 
+
+In Linux :- 
+1). sudo apt install python3-django
+2). django-admin --version
+
+
+In window :- 
+1). python -V
+2). python -m pip install --upgrade pip
+3). python -m venv venv
+4).venv\Scripts\activate
+5).pip install django
+
+
+Now run this command on terminal :- 
+
+1). python manage.py runserver
+after that your server is started and opne this link :  http://127.0.0.1:8000/
+
+Note :-  run this command where manage.py is stored.
+
+DB used :- themoviedb.org
